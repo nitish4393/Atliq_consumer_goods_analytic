@@ -135,6 +135,7 @@ order by gross_sales_mln desc;
 -- AD-HOC-REQUEST-10
 -- Get the Top 3 products in each division that have a high total_sold_quanƟty in the fiscal_year 2021?
 -- The final output contains these fields, division product_code
+
  WITH x AS
 (
 SELECT P.division, S.product_code, P.product, SUM(S.sold_quanƟty) AS Total_sold_quanƟty,
